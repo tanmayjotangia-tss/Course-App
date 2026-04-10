@@ -1,11 +1,11 @@
 <div>
     <label>
-        <input type="radio" name="filter" value="All" [(ngModel)]="filterValue" (change)="filterContentChanged()"> All Courses
+        <input type="radio" name="filter" value="All" [(ngModel)]="filterValue" (change)="filterContentChanged()"> All Courses ({{allCourses}})
     </label>
     <label>
-        <input type="radio" name="filter" value="Free" [(ngModel)]="filterValue" (change)="filterContentChanged()"> Free Courses
+        <input type="radio" name="filter" value="Free" [(ngModel)]="filterValue" (change)="filterContentChanged()"> Free Courses ({{freeCourses}})
     </label>
     <label>
-        <input type="radio" name="filter" value="Paid" [(ngModel)]="filterValue" (change)="filterContentChanged()"> Paid Courses
+        <input type="radio" name="filter" value="Paid" [(ngModel)]="filterValue" (change)="filterContentChanged()"> Paid Courses ({{paidCourses}})
     </label>
 </div>

@@ -1,7 +1,7 @@
 
 <app-home></app-home>
 <app-search (searchTermChange)="onSearchTermChange($event)"></app-search>
-<app-filter (filterChange)="onFilterChange($event)"></app-filter>
+<app-filter (filterChange)="onFilterChange($event)" [allCourses]="getAllCoursesCount()" [paidCourses]="getPaidCoursesCount()" [freeCourses]="getFreeCoursesCount()"></app-filter>
 
 <div *ngFor="let course of filteredCourses">
   <h2>{{ course.name }}</h2>

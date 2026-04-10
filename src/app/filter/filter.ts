@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 @Component({
@@ -9,6 +9,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class Filter {
   filterValue: string = '';
+  @Input() allCourses: number = 0;
+  @Input() paidCourses: number = 0;
+  @Input() freeCourses: number = 0;
   @Output() filterChange = new EventEmitter<string>();
   filterContentChanged() {
     this.filterChange.emit(this.filterValue);

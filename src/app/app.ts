@@ -91,4 +91,17 @@ export class App {
       this.filteredCourses = this.courses.filter(course => course.type === filterValue);
     }
   }
+
+  getAllCoursesCount() {
+    return this.courses.length;
+  }
+
+  getFreeCoursesCount() {
+    return this.courses.filter(course => course.type === 'Free').length;
+  }
+
+  getPaidCoursesCount() {
+    return this.courses.filter(course => course.type === 'Paid').length;
+  }
+
 }
