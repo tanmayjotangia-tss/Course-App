@@ -82,4 +82,13 @@ export class App {
     );
     console.log('Search term changed:', searchTerm);  
   }
+
+  onFilterChange(filterValue: string) {
+    if (filterValue === 'All') {
+      this.filteredCourses = [...this.courses];
+    }
+    else {
+      this.filteredCourses = this.courses.filter(course => course.type === filterValue);
+    }
+  }
 }

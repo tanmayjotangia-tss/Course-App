@@ -6,12 +6,14 @@ import { App } from './app';
 import { Home } from './home/home';
 import { Search } from './search/search';
 import { FormsModule } from '@angular/forms';
+import { Filter } from './filter/filter';
 
 @NgModule({
   declarations: [
     App,
     Home,
-    Search
+    Search,
+    Filter
   ],
   imports: [
     BrowserModule,
